@@ -186,9 +186,9 @@ The binary packages are ones that are already build from source by someone with 
 <p><strong>Key point:</strong> The package installed directly using dpkg in not managed by apt-get i.e if a new version of the package is available it will not be upgraded using <code>$ sudo apt-get upgrade</code> unless you add it to your apt repository. A detailed description about this can be found <a href="http://askubuntu.com/questions/430756/can-i-manage-dpkg-installed-package-with-apt-get">here</a>.</p>
 
 <h3>
-<a id="6-ppapersonal-package-archives" class="anchor" href="#6-ppapersonal-package-archives" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>6. PPA(Personal Package Archives):</h3>
+<a id="6-ppa-personal-package-archives" class="anchor" href="#6-ppa-personal-package-archives" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>6. PPA (Personal Package Archives):</h3>
 
-<p>A PPA, or Personal Package Archive, is a collection of packages not included in Ubuntu by defaul but are thosted on the Launchpad servers. Unlike packages installed using .deb files, PPA allows us to built and manage these non-standard packages using apt-get. Developers developing new version of a package first upload them as PPA for others to download and test/try their new packages. So with PPA you always have latest version of a package but since these packages are still under development stage they might be buggy. So you must be careful when you install them.</p>
+<p>A PPA, or Personal Package Archive, is a collection of packages not included in Ubuntu by default but are hosted on the Launchpad servers. Unlike packages installed using .deb files, PPA allows us to built and manage these non-standard packages using apt-get. Developers developing new version of a package first upload them as PPA for others to download and test/try their new packages. So with PPA you always have latest version of a package but since these packages are still under development stage they might be buggy. So you must be careful when you install them.</p>
 
 <p>Tutorial:<a href="http://www.makeuseof.com/tag/ubuntu-ppa-technology-explained/">What Is An Ubuntu PPA &amp; Why Would I Want To Use One?</a></p>
 
@@ -247,7 +247,7 @@ $ tar -xvfj &lt;name of tarball with tar.bz2 extension&gt;
 <li><p><strong>Building</strong> is the process of converting the high level language to a executable. It would involve compiling and linking. Many compilers handle the linking step automatically after compiling source code.</p></li>
 </ul>
 
-<p>There is no use in compiling alone as it does not produce the final excutable and hence you need to build always.</p>
+<p>Many libraries are distributed in compiled form for easy portability and code security. You always need to build them first to use them since compiling alone does not produce the final excutable. </p>
 
 <h2>
 <a id="compiler" class="anchor" href="#compiler" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Compiler:</h2>
